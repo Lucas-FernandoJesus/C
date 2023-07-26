@@ -1,0 +1,49 @@
+A operação para que seja utilizado um array em C é [] dentro do colchetes podemos guardar letras através de ['M'] ou simplesmente números : [0];
+
+Ex : 
+#include <stdio.h>
+
+int main () {
+
+    char palavraSecreta[20]; : Definição do tamanho do array;
+
+    palavraSecreta[0] = 'M';
+    palavraSecreta[1] = 'E';
+    palavraSecreta[2] = 'L';
+    palavraSecreta[3] = 'A';
+    palavraSecreta[4] = 'N';
+    palavraSecreta[5] = 'C';
+    palavraSecreta[6] = 'I';
+    palavraSecreta[7] = 'A';
+	Informação guardada naquela posição do array;
+
+}
+
+ou senão basta utilizar a função sprintf : 
+
+#include <stdio.h>
+
+int main () {
+
+    char palavraSecreta[20]; : Definição do tamanho do array;
+
+	sprintf(palavraSecreta,"Melancia");
+	Primeiro indicamos em qual array / variavel estaremos guardando a palavra;
+
+	Para mostrarmos a palavra guardada no array utilizamos : "%s";
+	printf ("%s",palavraSecreta);
+
+}
+
+
+O sinal de :  !  nega a variável / valor que vem após ela, no caso do while : 
+
+	} while (!acertou && !enforcou) aqui está sendo expressado o valor de não ser acertou e não ser enforcou.
+
+
+Para percorer as posições de um loop utilizando uma palavra como contador é necessário importar a biblioteca <string.h> e podemos utilizar ela da seguinte forma :
+
+for(int i = 0; i < strlen(palavraSecreta); i++){
+            printf("_ ");
+        }
+        printf("\n");

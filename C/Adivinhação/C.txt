@@ -1,0 +1,77 @@
+Tudo aquilo que começa com o sinal : #, é um tipo de diretiva , seja ela include ou define;
+
+if / else : condição;
+
+= : Recebe Valores;
+
+== : Indica que os valores devem ser iguais;
+
+- As variáveis existem dentro dos scopos onde elas foram criadas ou seja : dentro das {}.
+
+- Uma variável não pode ser usada antes/acima do scopo que ela foi criada muito menos após o scopo onde ela foi criada fechar '}'.
+
+- O único lugar onde as variáveis podem ser usadas é dentro das {} onde ela foi criada, ela pode ser reutilizada dentro de condições sem nenhum problema contando que ela respeite a sintaxe citada acima;
+
+- for (int i = 1; i <= 3; i++){
+
+° for : Função para execução de um (laço ou loop);
+
+° int = i : Definição de variavel;
+
+° i < n ou i < 3 : Menor que a quantidade de repetição;
+
+° i++ faz com que o for (laço ou loop) seja executado até a quantidade de menor seja igual a : n ou 3;
+
+Break : Faz o código parar / quebrar;
+
+Continue : faz com que o código continue de forma automatizada;
+
+Na multiplicação de números inteiros para que seja convertido em numeros com casas decimais podemos utilizar a divisão por números que contenham pontos . Ex: 2.0
+
+.1 É usado antes da máscara de double Ex : "%.1f" para definir quantas casas decimais serão mostradas.
+
+Para converter um inteiro para double podemos utilizar o seguinte exemplo : 
+
+	int a = 3;
+	int b = 2;
+	double pontos = 3 / (double)b;
+
+Para utilizar a função abs(conversão de números negativos para números positivos) é necessário importar a biblioteca <stdlib.h> Ex : 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a = 3;
+    int b = -3;
+
+    int c = abs(a * b);
+
+    printf("%d\n", c);
+
+}
+
+
+Para que seja gerado números aleatórios podemos utilziar as seguintes funções : 
+	#include <time.h>
+	int segundos = time(0);
+	srand(segundos);
+Pois a função time gera números diferentes a cada segundo que se passa.
+
+Para que seja possivel escolher uma opção podemos utilizar a opção switch :
+
+	int numeroTentativas;
+	switch (nivel){
+		case 1:
+			numeroTentativas = 20;
+			break;
+		case 2:
+			numeroTentativas = 15;
+			break;
+		default:
+			numeroTentativas = 6;
+			break;
+	}
+
+Dessa maneira o usuário pode escolher o nível em que ele quer jogar.
