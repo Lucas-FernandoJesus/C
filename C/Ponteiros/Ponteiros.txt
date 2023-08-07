@@ -1,0 +1,24 @@
+& : Alocar informações no endereço de memória na variavel definida, Ex :
+    //função void
+    calcula(&c);
+    printf("main %d %d\n",c,&c);
+
+* : quando utilizado no int quer dizer que vai vir o endereço de memória de um inteir, Ex :
+
+
+void calcula(int* c){
+    printf("calcula %d %d\n",c,&c);
+    c++;
+    printf("calcula %d %d\n",c,&c);
+}
+
+
+Para acessar e calcular o valor de alocado em um endereço de memória podemos utilizar a seguinte função : 
+
+(*c)
+
+void calcula(int* c){
+    printf("calcula %d %d\n",(*c),c);
+    (*c)++;
+    printf("calcula %d %d\n",(*c),c);
+}
